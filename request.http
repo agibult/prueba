@@ -1,0 +1,33 @@
+
+@myapi=https://jsonplaceholder.typicode.com
+
+### obteniendo todas las publicacion
+GET {{myapi}}/posts
+
+### obteniendo una sola publicacion
+GET https://jsonplaceholder.typicode.com/posts/1
+
+### creando una nueba publicacion
+POST {{myapi}}/posts
+Content-Type: application/json
+
+{
+    "title": "aprendiendo vscode",
+    //este es el body de la publicacion
+    "body": "esta muy divertido"
+}
+
+### eliminando una publicacion
+
+DELETE https://jsonplaceholder.typicode.com/posts/1
+
+### actualizando una publciacion por id
+
+PUT https://jsonplaceholder.typicode.com/posts/1
+Content-Type: application/json
+
+{
+    "title": "esta es la publicacion numero 1",
+    "body": "este contendio es actualiado"
+}
+
